@@ -1,0 +1,358 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AGRINHO 2026 | Agro Forte, Futuro Sustentável</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;900&family=Playfair+Display:wght@700;900&display=swap" rel="stylesheet">
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;900&family=Playfair+Display:wght@700;900&display=swap');
+        
+        :root {
+            --green: #00ff9d;
+        }
+        
+        body {
+            font-family: 'Inter', sans-serif;
+        }
+        
+        .title-font {
+            font-family: 'Playfair Display', sans-serif;
+        }
+
+        .hero-bg {
+            background: linear-gradient(rgba(0, 0, 0, 0.75), rgba(0, 0, 0, 0.85)), 
+                        url('https://picsum.photos/id/1015/2000/1200') center/cover no-repeat;
+        }
+
+        .nav-link {
+            transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+        }
+        
+        .nav-link:hover {
+            color: #00ff9d;
+            transform: translateY(-2px);
+        }
+
+        .card-hover {
+            transition: all 0.4s cubic-bezier(0.4, 0.0, 0.2, 1);
+        }
+        
+        .card-hover:hover {
+            transform: translateY(-15px) scale(1.03);
+            box-shadow: 0 25px 50px -12px rgb(0 255 157 / 0.25);
+        }
+
+        .leaf {
+            animation: float 6s ease-in-out infinite;
+        }
+
+        @keyframes float {
+            0%, 100% { transform: translateY(0); }
+            50% { transform: translateY(-25px); }
+        }
+
+        .soil-bg {
+            background: linear-gradient(#0a0a0a, #1a1a1a);
+        }
+    </style>
+</head>
+<body class="bg-[#0a0a0a] text-white overflow-x-hidden">
+
+    <!-- NAVBAR -->
+    <nav class="fixed top-0 w-full z-50 bg-black/80 backdrop-blur-lg border-b border-white/10">
+        <div class="max-w-7xl mx-auto px-6 py-5 flex items-center justify-between">
+            <div class="flex items-center gap-3">
+                <div class="w-10 h-10 bg-emerald-500 rounded-2xl flex items-center justify-center text-2xl">🌱</div>
+                <div>
+                    <span class="text-2xl font-black title-font tracking-tighter">AGRINHO</span>
+                    <span class="text-emerald-400 text-xl font-bold">2026</span>
+                </div>
+            </div>
+            
+            <div class="hidden md:flex items-center gap-10 text-sm font-medium">
+                <a href="#sobre" class="nav-link">Sobre</a>
+                <a href="#temas" class="nav-link">Temas</a>
+                <a href="#atividades" class="nav-link">Atividades</a>
+                <a href="#galeria" class="nav-link">Galeria</a>
+                <a href="#inscreva" class="nav-link">Inscreva-se</a>
+            </div>
+
+            <a href="https://github.com" target="_blank" 
+               class="flex items-center gap-2 px-6 py-3 bg-white text-black rounded-2xl font-semibold hover:bg-emerald-400 hover:text-black transition-all">
+                <i class="fa-brands fa-github"></i>
+                <span>Ver no GitHub</span>
+            </a>
+        </div>
+    </nav>
+
+    <!-- HERO -->
+    <section class="hero-bg min-h-screen flex items-center relative">
+        <div class="max-w-7xl mx-auto px-6 pt-32 pb-24">
+            <div class="max-w-3xl">
+                <div class="inline-flex items-center gap-2 bg-white/10 backdrop-blur-md px-5 py-2 rounded-3xl mb-6 border border-white/20">
+                    <div class="w-3 h-3 bg-emerald-400 rounded-full animate-pulse"></div>
+                    <span class="text-sm font-medium tracking-widest">EDIÇÃO 2026</span>
+                </div>
+                
+                <h1 class="text-7xl md:text-8xl font-black title-font leading-none tracking-tighter mb-6">
+                    AGRO<br>FORTE.<br>
+                    <span class="text-emerald-400">FUTURO</span><br>SUSTENTÁVEL.
+                </h1>
+                
+                <p class="text-2xl text-gray-300 mb-10 max-w-lg">
+                    O futuro da agricultura brasileira começa com você. 
+                    Seja parte da transformação.
+                </p>
+                
+                <div class="flex flex-wrap gap-4">
+                    <a href="#inscreva" 
+                       class="px-10 py-6 bg-emerald-500 hover:bg-emerald-400 text-black font-bold text-xl rounded-3xl transition-all flex items-center gap-3 group">
+                        PARTICIPAR AGORA
+                        <span class="text-3xl group-active:rotate-12 transition">🌾</span>
+                    </a>
+                    <a href="#sobre" 
+                       class="px-10 py-6 border-2 border-white/60 hover:border-white font-medium text-xl rounded-3xl transition-all">
+                        Saiba mais
+                    </a>
+                </div>
+                
+                <div class="mt-16 flex items-center gap-8 text-sm">
+                    <div class="flex -space-x-4">
+                        <div class="w-8 h-8 bg-emerald-600 border-2 border-black rounded-2xl flex items-center justify-center">👦</div>
+                        <div class="w-8 h-8 bg-amber-600 border-2 border-black rounded-2xl flex items-center justify-center">👧</div>
+                    </div>
+                    <div>
+                        <span class="font-bold text-emerald-400">+150.000</span><br>
+                        <span class="text-gray-400">jovens já transformados</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- floating elements -->
+        <div class="absolute bottom-10 right-10 text-6xl leaf">🌱</div>
+        <div class="absolute top-40 left-1/4 text-5xl leaf" style="animation-delay: 2s;">🌾</div>
+        <div class="absolute bottom-32 left-1/3 text-7xl leaf" style="animation-delay: 4s;">🍃</div>
+        
+        <div class="absolute bottom-8 left-1/2 flex flex-col items-center">
+            <div class="text-xs tracking-widest mb-2">ROLE PARA DESCER</div>
+            <i class="fa-solid fa-chevron-down animate-bounce text-2xl"></i>
+        </div>
+    </section>
+
+    <!-- SOBRE -->
+    <section id="sobre" class="soil-bg py-24">
+        <div class="max-w-7xl mx-auto px-6">
+            <div class="grid md:grid-cols-2 gap-16 items-center">
+                <div>
+                    <span class="px-4 py-2 bg-emerald-900/50 text-emerald-400 rounded-3xl text-sm font-medium">O QUE É O AGRINHO?</span>
+                    <h2 class="text-6xl title-font font-black tracking-tighter mt-6 leading-none">
+                        O maior programa de educação agroambiental do Brasil
+                    </h2>
+                    <p class="mt-8 text-xl text-gray-300 leading-relaxed">
+                        Desde 1999, o Agrinho desperta em crianças e adolescentes o amor pelo campo, 
+                        a consciência ambiental e o espírito empreendedor. 
+                        Em 2026 celebramos a força do agro brasileiro com inovação, tecnologia e sustentabilidade.
+                    </p>
+                    <div class="mt-12 grid grid-cols-3 gap-6">
+                        <div class="text-center">
+                            <div class="text-5xl font-black text-emerald-400">26</div>
+                            <div class="text-sm text-gray-400">ANOS</div>
+                        </div>
+                        <div class="text-center">
+                            <div class="text-5xl font-black text-emerald-400">27</div>
+                            <div class="text-sm text-gray-400">ESTADOS</div>
+                        </div>
+                        <div class="text-center">
+                            <div class="text-5xl font-black text-emerald-400">∞</div>
+                            <div class="text-sm text-gray-400">IMPACTOS</div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="relative">
+                    <img src="https://picsum.photos/id/1016/800/600" 
+                         class="rounded-3xl shadow-2xl border border-emerald-500/30" alt="Crianças no campo">
+                    <div class="absolute -bottom-6 -right-6 bg-black p-6 rounded-3xl border border-emerald-500/50 max-w-[220px]">
+                        <div class="flex gap-4 items-center">
+                            <div class="text-6xl">🇧🇷</div>
+                            <div>
+                                <div class="font-bold text-2xl">Agro Forte</div>
+                                <div class="text-emerald-400">Futuro Sustentável</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- TEMAS -->
+    <section id="temas" class="py-24 bg-black">
+        <div class="max-w-7xl mx-auto px-6">
+            <div class="text-center mb-16">
+                <h2 class="text-6xl title-font font-black tracking-tighter">Eixos Temáticos 2026</h2>
+                <p class="text-emerald-400 mt-4 text-xl">Escolha seu caminho e plante o futuro</p>
+            </div>
+            
+            <div class="grid md:grid-cols-3 gap-8">
+                <!-- Card 1 -->
+                <div class="card-hover bg-gradient-to-br from-emerald-950 to-black border border-emerald-900 rounded-3xl p-10">
+                    <div class="text-7xl mb-6">🌍</div>
+                    <h3 class="text-3xl font-bold mb-4">Sustentabilidade no Campo</h3>
+                    <p class="text-gray-400">Práticas regenerativas, economia circular e preservação da biodiversidade.</p>
+                    <div class="mt-8 text-xs uppercase tracking-widest text-emerald-400 font-medium">Eixo Principal</div>
+                </div>
+                
+                <!-- Card 2 -->
+                <div class="card-hover bg-gradient-to-br from-amber-950 to-black border border-amber-900 rounded-3xl p-10">
+                    <div class="text-7xl mb-6">🤖</div>
+                    <h3 class="text-3xl font-bold mb-4">Tecnologia & Inovação</h3>
+                    <p class="text-gray-400">Drones, IA, agricultura de precisão e o futuro digital do agro.</p>
+                    <div class="mt-8 text-xs uppercase tracking-widest text-amber-400 font-medium">Eixo Principal</div>
+                </div>
+                
+                <!-- Card 3 -->
+                <div class="card-hover bg-gradient-to-br from-sky-950 to-black border border-sky-900 rounded-3xl p-10">
+                    <div class="text-7xl mb-6">👨‍🌾</div>
+                    <h3 class="text-3xl font-bold mb-4">Empreendedorismo Rural</h3>
+                    <p class="text-gray-400">Criação de cooperativas, marcas e negócios sustentáveis no interior.</p>
+                    <div class="mt-8 text-xs uppercase tracking-widest text-sky-400 font-medium">Eixo Principal</div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ATIVIDADES -->
+    <section id="atividades" class="py-24 soil-bg">
+        <div class="max-w-7xl mx-auto px-6">
+            <h2 class="text-6xl title-font font-black tracking-tighter text-center mb-16">O que você vai fazer?</h2>
+            
+            <div class="grid md:grid-cols-4 gap-6">
+                <div class="bg-white/5 backdrop-blur-xl border border-white/10 rounded-3xl p-8 text-center card-hover">
+                    <i class="fa-solid fa-book text-5xl text-emerald-400 mb-6"></i>
+                    <h4 class="font-bold text-xl mb-2">Pesquisa</h4>
+                    <p class="text-sm text-gray-400">Desenvolva um projeto sobre sua realidade local</p>
+                </div>
+                <div class="bg-white/5 backdrop-blur-xl border border-white/10 rounded-3xl p-8 text-center card-hover">
+                    <i class="fa-solid fa-video text-5xl text-emerald-400 mb-6"></i>
+                    <h4 class="font-bold text-xl mb-2">Vídeos &amp; Conteúdo</h4>
+                    <p class="text-sm text-gray-400">Crie reels, documentários e podcasts</p>
+                </div>
+                <div class="bg-white/5 backdrop-blur-xl border border-white/10 rounded-3xl p-8 text-center card-hover">
+                    <i class="fa-solid fa-palette text-5xl text-emerald-400 mb-6"></i>
+                    <h4 class="font-bold text-xl mb-2">Arte &amp; Cultura</h4>
+                    <p class="text-sm text-gray-400">Desenhos, poesias, músicas e quadrinhos</p>
+                </div>
+                <div class="bg-white/5 backdrop-blur-xl border border-white/10 rounded-3xl p-8 text-center card-hover">
+                    <i class="fa-solid fa-trophy text-5xl text-emerald-400 mb-6"></i>
+                    <h4 class="font-bold text-xl mb-2">Premiação Nacional</h4>
+                    <p class="text-sm text-gray-400">Viaje, conheça o Brasil e ganhe prêmios incríveis</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- GALERIA / IMPACTO -->
+    <section id="galeria" class="py-24 bg-black">
+        <div class="max-w-7xl mx-auto px-6">
+            <h2 class="text-6xl title-font font-black tracking-tighter text-center mb-4">Histórias que inspiram</h2>
+            <p class="text-center text-gray-400 mb-12">2025 foi incrível. 2026 será histórico.</p>
+            
+            <div class="grid grid-cols-2 md:grid-cols-4 gap-4">
+                <img src="https://picsum.photos/id/201/600/600" class="rounded-3xl aspect-square object-cover hover:scale-105 transition" alt="">
+                <img src="https://picsum.photos/id/251/600/600" class="rounded-3xl aspect-square object-cover hover:scale-105 transition" alt="">
+                <img src="https://picsum.photos/id/133/600/600" class="rounded-3xl aspect-square object-cover hover:scale-105 transition" alt="">
+                <img src="https://picsum.photos/id/180/600/600" class="rounded-3xl aspect-square object-cover hover:scale-105 transition" alt="">
+            </div>
+        </div>
+    </section>
+
+    <!-- CALL TO ACTION -->
+    <section id="inscreva" class="py-32 bg-gradient-to-b from-black to-emerald-950 relative overflow-hidden">
+        <div class="max-w-4xl mx-auto text-center px-6">
+            <div class="text-emerald-400 text-sm tracking-[4px] font-bold mb-6">VAGAS ABERTAS • 2026</div>
+            <h2 class="text-6xl md:text-7xl title-font font-black tracking-tighter mb-8">
+                O campo precisa da sua ideia.<br>
+                <span class="text-emerald-400">Inscreva-se agora.</span>
+            </h2>
+            
+            <div class="max-w-md mx-auto mt-12">
+                <form class="space-y-6">
+                    <input type="text" placeholder="Seu nome completo" 
+                           class="w-full bg-white/10 border border-white/20 rounded-2xl px-8 py-6 focus:outline-none focus:border-emerald-400">
+                    <input type="email" placeholder="Email ou WhatsApp" 
+                           class="w-full bg-white/10 border border-white/20 rounded-2xl px-8 py-6 focus:outline-none focus:border-emerald-400">
+                    <input type="text" placeholder="Sua escola / cidade" 
+                           class="w-full bg-white/10 border border-white/20 rounded-2xl px-8 py-6 focus:outline-none focus:border-emerald-400">
+                    
+                    <button type="button" onclick="submitForm()"
+                            class="w-full py-8 text-2xl font-black bg-emerald-500 hover:bg-white hover:text-black transition-all rounded-3xl">
+                        QUERO PARTICIPAR DO AGRINHO 2026
+                    </button>
+                </form>
+            </div>
+            
+            <p class="text-xs text-gray-500 mt-10">*Inscrições gratuitas • Realizado com apoio de Embrapa, Ministério da Agricultura e parceiros</p>
+        </div>
+    </section>
+
+    <!-- FOOTER -->
+    <footer class="bg-black py-16 border-t border-white/10">
+        <div class="max-w-7xl mx-auto px-6">
+            <div class="flex flex-col md:flex-row justify-between items-center gap-8">
+                <div class="flex items-center gap-3">
+                    <div class="w-12 h-12 bg-emerald-500 rounded-3xl flex items-center justify-center text-4xl">🌱</div>
+                    <div class="font-black text-3xl title-font">AGRINHO 2026</div>
+                </div>
+                
+                <div class="flex gap-8 text-sm">
+                    <a href="#" class="hover:text-emerald-400">Instagram</a>
+                    <a href="#" class="hover:text-emerald-400">YouTube</a>
+                    <a href="#" class="hover:text-emerald-400">TikTok</a>
+                </div>
+                
+                <div class="text-xs text-gray-500 text-center md:text-right">
+                    Feito com ❤️ para o futuro do agro brasileiro<br>
+                    <span class="text-emerald-400">Let him cook.</span>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        // Tailwind script already included
+        
+        function submitForm() {
+            const notif = document.createElement('div');
+            notif.className = 'fixed bottom-8 right-8 bg-emerald-500 text-black font-bold px-8 py-5 rounded-3xl shadow-2xl flex items-center gap-3';
+            notif.innerHTML = `
+                <span>Inscrição recebida com sucesso!</span>
+                <span class="text-2xl">🌾</span>
+            `;
+            document.body.appendChild(notif);
+            
+            setTimeout(() => {
+                notif.style.transition = 'all 0.5s';
+                notif.style.opacity = '0';
+                notif.style.transform = 'translateY(20px)';
+                setTimeout(() => notif.remove(), 500);
+            }, 3500);
+        }
+        
+        // Scroll effect for navbar
+        window.addEventListener('scroll', () => {
+            if (window.scrollY > 100) {
+                document.querySelector('nav').classList.add('shadow-2xl');
+            } else {
+                document.querySelector('nav').classList.remove('shadow-2xl');
+            }
+        });
+        
+        console.log('%cAGRINHO 2026 - Let him cook 🔥', 'color:#00ff9d; font-family:monospace; font-size:18px;');
+    </script>
+</body>
+</html>
